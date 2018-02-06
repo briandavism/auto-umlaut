@@ -51,7 +51,10 @@ SetCapsLockState, AlwaysOff
 	CapsLock & 4:: Send, {ASC 0128}		;CapsLock+s = CapsLock+s, Eszett
 	return
 
-	CapsLock & 1:: Send, {U+203D}		;CapsLock+s = CapsLock+s, Eszett
+	CapsLock & 1:: Send, {U+203D}		;CapsLock+1s = CapsLock+s, Interrobang
+	return
+
+	CapsLock & l:: Send, {ASC 0163}		;CapsLock+l = CapsLock+l, GBP
 	return
 
 	CapsLock & \:: 
