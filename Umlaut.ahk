@@ -97,6 +97,7 @@ SetCapsLockState, AlwaysOff ;This command disables the CapsLock button while the
 		Send, {U+253b}
 		Send, {U+2501}
 		Send, {U+253b}
+	return
 
 CapsLock & 9:: 
 		Send, {U+0028}			;Disapproval
@@ -104,3 +105,4 @@ CapsLock & 9::
 		Send, {U+005f}
 		Send, {U+0ca0}
 		Send, {U+0029}
+	return
